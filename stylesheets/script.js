@@ -5,7 +5,6 @@ $(document).ready(function(){
     function checkWidth() {
         if ($(window).width() < 1200) {
             $("body").addClass("mobile");
-            $(".mobileMenu").css({ "transition": "all 1s ease-out" })
         } else {
             $("body").removeClass("mobile");
             $(".mobileMenu").css({ "transition": "none" })
@@ -13,6 +12,7 @@ $(document).ready(function(){
     }
 
     $(".triplebar").click(function() {
+        $(".mobileMenu").css({ "transition": "all 1s ease-out" })
         $(".mobileMenu").toggleClass("expanded");;
     });
 

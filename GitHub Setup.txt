@@ -1,0 +1,39 @@
+Hosting to your GitHub
+
+1. Open your profile and create a new repository/repo/file
+2. Once you are in your new repository, drag and drop the ENTIRE contents of the main folder into the repository.
+3. Wait for GitHub to process the files
+4. Go into the "Settings" tab at the top of the page
+5. After going to the settings, scroll down (you should already be in the "Options" tab shown on the left sidebar) until you get to "GitHub Pages"
+6. Scroll back down to "Github Pages"
+7. Select "Master Branch" as the source (the page will reload)
+8. Leave "Theme Chooser" blank (I've created the styling for you in the .css file)
+9. The site is viewable online (live) already at yourgithubusername.github.io/yourrepositoryname (you should swap the names to your actual username and repository name)
+10. Then we will attach your actual domain to your Github Project!
+
+
+
+Linking your Domain to GitHub (the web hosting account)
+
+1. Open the link to the place where you have purchased your domain from
+2. On that page, navigate to the place where you manage your domains
+3. Select the domain you want to change and click its settings
+4. Click "manage DNS" or "DNS settings"
+5. Navigate to "Records"
+6. Make 5 changes by clicking "Add" and create the following 5 records
+   1. Type: A, Name/Host: @, PointsTo/Value: 185.199.108.153, TTL: 1/2hr
+   2. Type: A, Name/Host: @, PointsTo/Value: 185.199.109.153, TTL: 1/2hr
+   3. Type: A, Name/Host: @, PointsTo/Value: 185.199.110.153, TTL: 1/2hr
+   4. Type: A, Name/Host: @, PointsTo/Value: 185.199.111.153, TTL: 1/2hr
+   5. Type: CNAME, Name/Host: www, PointsTo/Value: githubusername.github.io, TTL: 1hr
+	- Sometimes CNAME gives an error, but GitHub recognizes the first four records without it
+	- If error persists, keep the tab open and continue to next step
+7. Open your GitHub Repo in a new tab
+8. Navigate back to Settings (Options tab)
+9. Scroll back down to "GitHub Pages"
+10. You should see a green notification that says "Your site is published at..." With your domain
+11. Check to see if the domain displays correctly by clicking the link
+12. Back on the "GitHub Pages" section, check the box that says "Enforce HTTPS"
+	- This may take a while (At least 24 hrs)
+	- This step is just for security and not necessary for the site to actually work/display
+13. Hooray! You've got a live site!

@@ -93,6 +93,7 @@
 #pullup .fullDescription {
     margin: 18rem auto 0 auto;
     max-width: 1196px;
+    width: 100%;
 }
 
 #pullup #pullupAbout, #pullup #pullupProject {
@@ -140,10 +141,11 @@
 }
 
 #pullup h3 {
-    font-size: 1.28em;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
 }
 
-#pullup p {
+#pullup p, #pullup ul {
     line-height: 1.68em;
     margin-bottom: 1.68em;
 }

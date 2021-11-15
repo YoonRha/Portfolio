@@ -18,35 +18,42 @@ $(document).ready(function(){
 
     $("#currentYear").html(new Date().getFullYear());
 
+
+
     // Hero Fix ----------------------------------------------------------------------
     var conHeight = $("#pullup .hero").height();
     var imgHeight = $("#pullup .hero img").height();
     var gap = (imgHeight - conHeight) / 2;
     $("#pullup .hero img").css("top", -gap);
 
-    // Pullup ------------------------------------------------------------------------
 
+
+    // Pullup ------------------------------------------------------------------------
     $(".projectContainer").click(function() { 
         const PROJECTHERO = "";
-        $("#currentProject .hero").css({ "background":PROJECTHERO });
+        $("#pullupProject .hero").css({ "background":PROJECTHERO });
         setPullup("project");
     });
 
     $("#about").click(function() { 
-        $("#currentProject .hero").css({ "background":"url(./images/about/banner-about.jpg)" });
+        $("#pullupAbout .hero").css({ "background": "url(images/about/banner-about.jpg)"});
         setPullup("about");
     });
 
     function setPullup(projectOrClass) {
         if(projectOrClass === "project") {
-            $("#currentProject").addClass("show");
-            $("#about").removeClass("show");
+            $("#pullupProject").addClass("show");
+            $("#pullupAbout").removeClass("show");
         } else { //about
-            $("#about").addClass("show");
-            $("#currentProject").removeClass("show");
+            $("#pullupAbout").addClass("show");
+            $("#pullupProject").removeClass("show");
         }
         $("#pullup").addClass("show"); 
     }
 
-    $("#pullupToggle").click(function() { $("#pullup").removeClass("show"); });
+    $("#pullupToggle").click(function() { 
+        $("#pullup").removeClass("show"); 
+        $("#pullupAbout").removeClass("show");
+        $("#pullupProject").removeClass("show");
+    });
 })

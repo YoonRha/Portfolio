@@ -165,7 +165,7 @@ a:hover {
 /* Transitions ---------------------------------------------------------------*/
 
 a, .projectContainer img, .projectContainer .projectDescription,
-#pullup {
+#pullup, #pullupToggle {
   transition: all 0.3s ease-out;
 }
 

@@ -5,15 +5,13 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 6rem);
-    padding: 5rem;
+    padding: 5rem 5rem 2rem 5rem;
     background: #eee;
     z-index: 1;
     overflow: scroll;
 }
 
-#pullup.show {
-    top: 6rem;
-}
+#pullup.show { top: 6rem; }
 
 #pullupToggle {
     display: block;
@@ -26,11 +24,11 @@
     z-index: 1;
     color: #fff;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #pullupToggle:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 #pullup .hero::before {
@@ -41,11 +39,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://media.istockphoto.com/photos/munchkin-cat-picture-id1325505079?b=1&k=20&m=1325505079&s=170667a&w=0&h=Zga2KAUYNGJQDhV65fUQz_Q3tCO7xNtUTiJLrAnv_eY=) no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    z-index: -1;
+    background: #0007;
 }
 
 /* Pullup Hero -------------------------------------------------------------*/
@@ -58,7 +52,10 @@
     left: 0;
     width: 100%;
     height: 20rem;
-    background: #0005;
+    background: url(https://media.istockphoto.com/photos/munchkin-cat-picture-id1325505079?b=1&k=20&m=1325505079&s=170667a&w=0&h=Zga2KAUYNGJQDhV65fUQz_Q3tCO7xNtUTiJLrAnv_eY=) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     justify-content: center;
 }
 
@@ -68,6 +65,13 @@
     text-align: center;
     z-index: 1;
     color: #fff;
+    margin-bottom: 1rem;
+}
+
+#pullup #pullupAbout h1 {
+    margin-top: 4rem;
+    font-size: 2em;
+    text-align: center;
 }
 
 #pullup .hero p {
@@ -81,23 +85,45 @@
     max-width: 1196px;
 }
 
-#pullup #about, #pullup #currentProject {
+#pullup #pullupAbout, #pullup #pullupProject {
     display: none;
 }
 
-#pullup #about.show, #pullup #currentProject.show {
+#pullup #pullupAbout.show, #pullup #pullupProject.show {
     display: flex;
+}
+
+/* About -------------------------------------------------------------------*/
+
+#profilePhoto {
+    display:block;
+    position: absolute;
+    left: calc(50vw - 4rem);
+    top: 16rem;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border: solid 0.5rem #eee;
+    border-radius: 100%;
+    z-index: 1;
 }
 
 /* Pullup Typography -------------------------------------------------------*/
 
-#pullup h1, h2, h3, h4, h5, h6, p {
-    line-height: 2em;
+#pullup h1, #pullup h2, #pullup h3, #pullup h4, #pullup h5, #pullup h6 {
+    line-height: 1.2em;
+    margin-bottom: 2rem;
 }
 
 #pullup h2 {
+    border-top: solid 1px #aaa;
+    padding-top: 2rem;
     font-size: 1.8em;
-    margin-bottom: 1rem;
+}
+
+#pullup h2:first-of-type {
+    border-top: none;
+    padding-top: none;
 }
 
 #pullup h3 {

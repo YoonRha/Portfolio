@@ -196,3 +196,9 @@ body {
   }
   .projectContainer { width: 100%; }
 }
+
+
+@media (max-width: 600px){
+  .projectContainer img { opacity: 0.5; }
+  .projectContainer .projectDescription { opacity: 1; }
+}

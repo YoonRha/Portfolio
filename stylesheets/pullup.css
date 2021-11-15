@@ -27,6 +27,8 @@
     opacity: 0.8;
 }
 
+#pullupToggle::selection { background: none; }
+
 #pullupToggle:hover {
     opacity: 0.5;
 }

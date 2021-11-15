@@ -51,9 +51,10 @@ $(document).ready(function(){
         $("#pullup").addClass("show"); 
     }
 
-    $("#pullupToggle").click(function() { 
-        $("#pullup").removeClass("show"); 
-        $("#pullupAbout").removeClass("show");
-        $("#pullupProject").removeClass("show");
-    });
+    $("#pullupToggle").click(function() { hidePullup() });
+    $("#design").click(function() { hidePullup() });
+    $("#logo").click(function() { hidePullup() });
+    function hidePullup(){
+        $("#pullup").removeClass("show");
+    }
 })

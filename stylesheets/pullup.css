@@ -81,10 +81,18 @@
     max-width: 1196px;
 }
 
+#pullup #about, #pullup #currentProject {
+    display: none;
+}
+
+#pullup #about.show, #pullup #currentProject.show {
+    display: flex;
+}
+
 /* Pullup Typography -------------------------------------------------------*/
 
 #pullup h1, h2, h3, h4, h5, h6, p {
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 #pullup h2 {
@@ -100,5 +108,5 @@
 }
 
 #pullup p {
-    line-height: 1.5em;
+    line-height: 1.68em;
 }

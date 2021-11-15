@@ -17,4 +17,15 @@ $(document).ready(function(){
     });
 
     $("#currentYear").html(new Date().getFullYear());
+
+    // Hero Fix ----------------------------------------------------------------------
+    var conHeight = $("#pullup .hero").height();
+    var imgHeight = $("#pullup .hero img").height();
+    var gap = (imgHeight - conHeight) / 2;
+    $("#pullup .hero img").css("top", -gap);
+
+    // Pullup ------------------------------------------------------------------------
+
+    $(".projectContainer").click(function() { $("#pullup").addClass("show"); });
+    $("#pullupToggle").click(function() { $("#pullup").removeClass("show"); });
 })

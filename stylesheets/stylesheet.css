@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./mobile.css";
+@import "./pullup.css";
 
 html {
   scroll-behavior: smooth;
@@ -24,7 +25,7 @@ nav, footer {
   display: flex;
   flex-direction: row;
   height: 6rem;
-  max-width: 1195px;
+  max-width: 1196px;
   width: 100%;
   padding: 2rem 0;
   margin-bottom: 1rem;
@@ -133,15 +134,10 @@ footer {
   border-bottom: none;
   margin-top: 1rem;
   margin-bottom: 0;
-  padding: 0 0.5rem;
 }
 
 footer .socials a {
   margin: 0 0.5rem 0.5rem 0;
-}
-
-.copyright {
-  margin-left: -2.2rem;
 }
 
 /* General Typography -------------------------------------------------------*/
@@ -165,7 +161,8 @@ a:hover {
 
 /* Transitions ---------------------------------------------------------------*/
 
-a, .projectContainer img, .projectContainer .projectDescription {
+a, .projectContainer img, .projectContainer .projectDescription,
+#pullup {
   transition: all 0.3s ease-out;
 }
 

@@ -201,4 +201,6 @@ body {
 @media (max-width: 600px){
   .projectContainer img { opacity: 0.5; }
   .projectContainer .projectDescription { opacity: 1; }
+  .projectContainer:hover img { opacity: 1; }  
+  .projectContainer:hover .projectDescription { opacity: 0; }
 }

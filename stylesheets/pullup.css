@@ -92,7 +92,7 @@
 
 #pullup .fullDescription {
     margin: 18rem auto 0 auto;
-    max-width: 1196px;
+    max-width: 1178px;
     width: 100%;
 }
 
@@ -148,4 +148,13 @@
 #pullup p, #pullup ul {
     line-height: 1.68em;
     margin-bottom: 1.68em;
+}
+
+
+/* Queries -------------------------------------------------------------------*/
+
+@media (max-width: 600px){
+    #pullup {
+        padding: 3.5rem 2.2rem 2rem 2.2rem;
+    }
 }

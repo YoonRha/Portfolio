@@ -1,17 +1,18 @@
 @import "./reset.css";
 @import "./mobile.css";
 @import "./pullup.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   position: relative;
   color: #333;
   background: #eee;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #main {
@@ -43,6 +44,7 @@ nav {
 nav a {
  text-transform: uppercase;
  margin: 0.5rem 0.5rem;
+ letter-spacing: 1.1px;
 }
 
 nav > span {
@@ -86,7 +88,6 @@ nav .socials {
   position: relative;
 }
 
-.projectContainer a,
 .projectContainer img {
   width: 100%;
   height: 100%;
@@ -122,7 +123,9 @@ nav .socials {
 
 .projectDescription p:first-child {
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
 }
 
 /* Footer -------------------------------------------------------------------*/

@@ -30,8 +30,16 @@ $(document).ready(function(){
 
     // Pullup ------------------------------------------------------------------------
     $(".projectContainer").click(function() { 
-        const PROJECTHERO = "";
-        $("#pullupProject .hero").css({ "background":PROJECTHERO });
+        const PROJECTINDEX = $(this).index();
+        const PROJECTIMGURL = $(".projectContainer:nth-child("+(PROJECTINDEX+1)+") img").attr("src")
+        const PROJECTHERO = "url("+PROJECTIMGURL+")";
+        $("#pullupProject .hero").css({ "background":PROJECTHERO, "background-position":"50% 50%" });
+
+
+        const PNAME = ".projectContainer:nth-child("+(PROJECTINDEX+1)+") p:first-of-type";
+        const PROJECTNAME = $(PNAME).text();
+        $("#pullupProject .hero h1").html(PROJECTNAME);
+
         setPullup("project");
     });
 

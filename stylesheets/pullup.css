@@ -124,7 +124,7 @@
 /* Footer -------------------------------------------------------------------*/
 
 #pullup .footer {
-    margin: auto;
+    margin: 2rem auto 0 auto;
 }
 
 #pullup .footer .copyright, #pullup .footer i {

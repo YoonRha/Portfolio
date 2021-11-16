@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 6rem);
-    padding: 5rem 5rem 2rem 5rem;
+    padding: 5rem 5rem 0rem 5rem;
     background: #eee;
     z-index: 1;
     overflow: scroll;
@@ -70,6 +70,12 @@
     z-index: 1;
     color: #fff;
     margin-bottom: 1rem;
+}
+
+#pullup .hero h1::selection,
+#pullup .hero p::selection {
+    color: #fff;
+    background: #fff3;
 }
 
 #pullup #pullupAbout h1 {

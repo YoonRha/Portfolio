@@ -59,14 +59,20 @@ $(document).ready(function(){
         setPullup("about");
     });
 
-    function setPullup(projectOrClass) {
-        if(projectOrClass === "project") {
+    $("#photography").click(function() {
+        $("#pullupProject .fullDescription").load("projectfiles/photography.html"); 
+        $("#pullupAbout .hero").css({ "background": "url(images/about/banner-about.jpg)"});
+        setPullup("photography");
+    });
+
+    function setPullup(type) {
+        if(type === "project" || type === "photography") {
             $("#pullupProject").addClass("show");
             $("#pullupAbout").removeClass("show");
         } else { //about
             $("#pullupAbout").addClass("show");
             $("#pullupProject").removeClass("show");
-        }
+        } 
         $("#pullup").addClass("show"); 
     }
 

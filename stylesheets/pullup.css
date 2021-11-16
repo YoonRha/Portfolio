@@ -176,13 +176,11 @@
     margin-bottom: 1rem;
 }
 
-#pullup figure img {
-    margin-bottom: 0;
-}
+#pullup figure { flex: 1; }
 
-#pullup .gallery {
-    display: flex;
-}
+#pullup figure img { margin-bottom: 0; }
+
+#pullup .gallery { display: flex; }
 
 #pullup figcaption {
     font-size: 0.9em;
@@ -192,10 +190,7 @@
 /* Queries -------------------------------------------------------------------*/
 
 @media (max-width: 600px){
-    #pullup {
-        padding: 3.5rem 2.2rem 2rem 2.2rem;
-    }
-    #pullup .gallery {
-        flex-direction: column;
-    }
+    #pullup { padding: 3.5rem 2.2rem 2rem 2.2rem; }
+    #pullup .gallery { flex-direction: column; }
 }
+

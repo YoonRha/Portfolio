@@ -186,6 +186,7 @@
     max-width: 100%;
     width: 100%;
     margin-bottom: 2.5rem;
+    padding: 2px;
 }
 
 #pullup figure {
@@ -199,6 +200,7 @@
 #pullup figcaption {
     font-size: 0.9em;
     font-style: italic;
+    text-align: center;
 }
 
 /* Gallery Grid */

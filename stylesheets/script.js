@@ -91,7 +91,7 @@ $(document).ready(function(){
 
     function setPullup() {
         $("#pullupContent").addClass("show");
-        $("#pullup").addClass("show"); 
+        $("#pullup").addClass("show");
     }
 
     $("#pullupToggle").click(function() { hidePullup() });
